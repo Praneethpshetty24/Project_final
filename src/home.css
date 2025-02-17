@@ -1,0 +1,131 @@
+/* Wider todo container with black text */
+.todo-container {
+    width: 500px; /* Increased width */
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #6e7fdb, #5a92e8); /* Gradient from light blue to dark blue */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #000; /* Black text */
+  }
+  
+  h1 {
+    color: #000; /* Black title */
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  input {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000; /* Black text for input */
+  }
+  
+  button {
+    padding: 12px 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  li:hover {
+    transform: translateY(-5px);
+  }
+  
+  li span {
+    flex: 1;
+    font-size: 18px;
+    text-align: left;
+    color: #000; /* Black text for task */
+  }
+  
+  .icons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .edit-icon,
+  .delete-icon {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .edit-icon {
+    color: #007bff;
+  }
+  
+  .delete-icon {
+    color: #dc3545;
+  }
+  
+  .edit-icon:hover {
+    color: #0056b3;
+  }
+  
+  .delete-icon:hover {
+    color: #c82333;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f5);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #000; /* Black text for task */
+  }
+  
+  .todo-item:hover {
+    background: linear-gradient(145deg, #f1f1f9, #e0e0e5);
+  }
+  
+  .todo-item .icons {
+    gap: 12px;
+  }
+  
