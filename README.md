@@ -49,17 +49,16 @@ Prerequisites:
 
 To deploy the app using Minikube:
 
-1. Make the deploy script executable:
+For Windows:
+```cmd
+deploy-minikube.bat
+```
+
+For Linux/Mac:
 ```bash
 chmod +x deploy-minikube.sh
-```
-
-2. Run the deployment script:
-```bash
 ./deploy-minikube.sh
 ```
-
-3. Access the app at the URL provided by the script
 
 To clean up:
 ```bash
