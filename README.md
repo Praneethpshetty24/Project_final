@@ -1,6 +1,4 @@
-# Todo
-
-
+# Todo App
 
 ## Getting started
 
@@ -41,6 +39,32 @@ Use the built-in continuous integration in GitLab.
 - [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
 - [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
 - [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+
+## Running with Minikube
+
+Prerequisites:
+- Minikube installed
+- kubectl installed
+- Docker installed
+
+To deploy the app using Minikube:
+
+1. Make the deploy script executable:
+```bash
+chmod +x deploy-minikube.sh
+```
+
+2. Run the deployment script:
+```bash
+./deploy-minikube.sh
+```
+
+3. Access the app at the URL provided by the script
+
+To clean up:
+```bash
+kubectl delete -f k8s/deployment.yaml
+```
 
 ***
 
